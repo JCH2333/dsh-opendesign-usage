@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Local runtime data — a harvested session cookie lives here on some setups
+*.local.json
+opendesign-usage.json
+
+# Build / test artifacts
+*.tgz
+*.log
+coverage/
+dist/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
