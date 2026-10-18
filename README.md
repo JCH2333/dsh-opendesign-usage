@@ -111,6 +111,10 @@ cmd /c mklink /D "$prof\node_modules\dsh-opendesign-usage" "$plug"
 
 ## 使用
 
+> **只在当前会话选中 OpenDesign 模型时显示。** 切到 DeepSeek、OpenCode 等其他服务商时药丸自动隐藏，并停止轮询与上游请求；切回 OpenDesign 模型立即恢复。
+>
+> 会话刚打开、选择尚未解析的那一小段仍会显示（fail-open）——一次失败的选择读取不该被误读成「插件没装」。
+
 1. 输入框上方出现药丸，未登录时显示 `<err:noconfig>`
 2. 点开 → 点 **登录**
 3. 弹出的 Chrome 窗口里登录 [open-design.ai](https://open-design.ai/cloud/dashboard)（需过人机验证，正常）
